@@ -1,0 +1,76 @@
+.imagePreview{
+    font-family: Arial;
+    border: dashed #9d9d9d 2px;
+    cursor: pointer;
+    color: #9d9d9d;
+    border-radius: 5px;
+    text-align: center;
+    width: 234px;
+    height: 165px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    position: relative;
+    .imagePreview-container{
+        div{
+            width: 30px;
+            height: 20px;
+            font-size: 35px ;
+            margin-bottom: 10px;
+            margin-right: 20px;
+        }
+        p{
+            margin: 0 0 10px;
+            font-size: 14px;
+            color: #9d9d9d;
+        }
+    }
+    input{
+        height: 165px;
+        width: 234px;
+        position: absolute;
+        z-index: 1;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+        text-indent: -999em;
+    }
+    .imagePreview-img-container{
+        // all:unset;
+        height: 170px;
+        width: 264px;
+        position: absolute;
+        z-index: 100;
+        margin-top: 2px;
+        img{
+            // all:unset;
+            width: 234px;
+            height: 165px;
+            background: white;
+        }
+        &:hover{
+            img{
+                display: none;
+            }
+        }
+        .imagePreview-deleteContainer{
+            position: absolute;
+            display: flex;
+            top: 5px;
+            justify-content: space-between;
+            right: 20px;
+            width: 85%;
+            .imagePreview-deleteContainer-first, .imagePreview-deleteContainer-second{
+                background: #e8e9e8;
+                width: 45px;
+                height: 45px;
+                border-radius: 50px;
+                overflow: hidden;
+            }
+        }
+    }
+}

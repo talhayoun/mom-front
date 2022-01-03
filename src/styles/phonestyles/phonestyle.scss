@@ -1,0 +1,90 @@
+@media screen and (max-width: 400px) {
+  .nav {
+    .nav-container {
+      width: 100%;
+      right: 0%;
+      gap: 20px;
+      img {
+        background-size: cover;
+      }
+
+      input {
+        position: absolute;
+        bottom: -40px;
+        width: 100%;
+        border-radius: 0;
+        margin-right: 0;
+      }
+    }
+
+    .nav-suggestions {
+      right: 0;
+      top: 10rem;
+      width: 100%;
+      p {
+        padding: 10px;
+      }
+    }
+  }
+
+  .homepage {
+    .homepage-content-container {
+      bottom: 20%;
+    }
+  }
+
+  .recepie-item {
+    width: 100%;
+    flex-direction: column;
+
+    .recepie-item-content {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  .itemdetails {
+    .itemsdetails-container {
+      width: 100%;
+
+      .itemsdetails-container-content {
+        width: 95%;
+
+        .itemsdetails-creator {
+          p {
+            margin: 0;
+          }
+        }
+
+        .itemsdetails-header {
+          img {
+            height: 100%;
+            max-height: 300px;
+          }
+        }
+      }
+    }
+  }
+
+  .recepie-form {
+    overflow: auto;
+    form {
+      width: 100%;
+      height: 100%;
+    }
+
+    .itemslist {
+      width: 100%;
+      height: 100%;
+      right: 0;
+      top: 0;
+    }
+  }
+}

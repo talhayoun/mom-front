@@ -1,0 +1,35 @@
+.homepage {
+  width: 100%;
+  overflow: hidden;
+  .homepage-background {
+    // background-image: url("../../images/pexels-dana-tentis-691114.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../../images/pexels-dana-tentis-691114.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .homepage-content-container {
+      color: #fff;
+      margin: 22px;
+      position: absolute;
+      bottom: 30%;
+      right: 15%;
+      font-family: 'Alef', sans-serif;
+    h1 {
+        font-size: 60px;
+        margin-bottom: 0px;
+    }
+    p{
+        margin-top: 10px;
+        font-size: 30px;
+    }
+  }
+}

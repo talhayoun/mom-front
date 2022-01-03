@@ -1,0 +1,55 @@
+.recepies {
+  width: 100%;
+  .recepies-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Alef", sans-serif;
+
+    h1 {
+      font-size: 55px;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.recepie-item {
+  cursor: pointer;
+  width: 50%;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  box-shadow: 4px 4px 4px #ccc;
+  margin-bottom: 70px;
+  display: flex;
+  height: 350px;
+  max-height: 350px;
+  width: 800px;
+  justify-content: space-between;
+  img {
+    width: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  .recepie-item-content {
+    padding: 1% 5%;
+    width: 100%;
+    h1 {
+      font-size: 65px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+.recepies-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../images/recepies-background.jpg");
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

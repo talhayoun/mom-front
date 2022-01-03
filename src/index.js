@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import { MealsContextProvider } from './contex/mealscontext';
+import { UserContextProvider } from './contex/usercontext';
 import reportWebVitals from './reportWebVitals';
+import "./styles/styles.scss"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <UserContextProvider>
+      <MealsContextProvider>
+        <App />
+      </MealsContextProvider>
+    </UserContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
